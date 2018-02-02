@@ -113,7 +113,30 @@ The objectives for the following section are to
 Your team is now ready to work on the new task (creating a new website) using GitHub Project to track and prioritize the work.
 It’s now time to add some specific, well-defined work (tasks, enhancements, and bugs) using Issues to the project. 
 
+[Developer B]
 
+Once the project board is set up, Create a new Label “feature” for your repo. Follow steps on 
+https://help.github.com/articles/creating-a-label.
+
+
+
+### Add an Issue
+
+Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. In this step, Developer B will add their task to create an `index.html` file as an issue. 
+
+[Developer B]
+
+```
+(1) On the GitHub repository page, select the Issues tab and click on “New Issue”. 
+(2) Title the issue “Create an index.html page”.
+    Leave a comment giving a description or more information about it. 
+(3) Click on “Submit new issue” and you should see a new page with the issue you just created. 
+(4) Assign this issue (Create an index.html page) to the New Website project. 
+    On this issue page, click on the cogwheel in the Projects section of the right sidebar. 
+    This will open a list of Projects in this repository. 
+    Click the “New Website” project created by Developer A. 
+(5) This will assign this issue to the Project and will automatically add it to the To Do column.
+```
 
 
 
