@@ -87,25 +87,19 @@ Before proceeding, read about the difference between `upstream` and `origin`:
 (3) Navigate to _your_ fork of the project.
 (4) Use "Clone or download" to reveal _your_ fork's repository URL. 
     This is the <FORKS_REPOSITORY_URL>.
-```
-
-*Using the command-line*
-Using the command-line, navigate to the directory in which you will create a local repository. In a terminal, go to the folder where your local copy of the repo will live (for example, `cd Documents/cs121/src`).
-```
-(5) git clone <FORKS_REPOSITORY_URL> <LOCAL_REPOSITORY_DIRECTORY>
-(6) cd <LOCAL_REPOSITORY_DIRECTORY>
-```
-
-*Using GitHub*
-```
-(7) Navigate to the original project's page (the one you forked from).
-(8) Use "Clone or download" to reveal the project's repository URL, which
+    
+(5) Navigate to the original project's page (the one you forked from).
+(6) Use "Clone or download" to reveal the project's repository URL, which
     is the <PROJECT_REPOSITORY_URL>.
 ```
 
 *Using the command-line*
+
+Using the command-line, navigate to the directory in which you will create a local repository. In a terminal, go to the folder where your local copy of the repo will live (for example, `cd Documents/cs121/src`).
 ```
-(9) git remote add upstream <PROJECT_REPOSITORY_URL>
+(5) git clone <FORKS_REPOSITORY_URL> <LOCAL_REPOSITORY_DIRECTORY>
+(6) cd <LOCAL_REPOSITORY_DIRECTORY>
+(7) git remote add upstream <PROJECT_REPOSITORY_URL>
 ```
 
 ## Setup a Project Management (PM) system (GitHub Projects)
