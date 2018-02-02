@@ -87,9 +87,31 @@ Using the command-line, navigate to the directory in which you will create a loc
 (9) git remote add upstream <PROJECT_REPOSITORY_URL>
 ```
 
+## Setup a Project Management (PM) system (GitHub Projects)
 
+GitHub provides Issues and notes (and milestones) for you to keep track and prioritize your work. 
+Ambiguous tasks or ideas for future tasks should be notes while well-defined tasks (or small goals) can be added to Issues.
+The objectives for the following section are to 
+* Create a GitHub Project via GitHub web interface
+* Add a new issue via GitHub web interface
+* Add a note and turn it into an issue via GitHub web interface
+* Describe the difference between issues and notes shown in a GitHub project board
+* Close an issue via GitHub web interface as well as via git commit command
 
+### Set up a GitHub Project
 
+[Developer A] 
+```
+(1) On the GitHub repository, select the Projects tab and click on “New Project”. 
+(2) Name the new project board “New Website” and type in some description.
+(3) In the Project Template section, click on “Template: None” and change it to 
+    “Kanban (Automated)”.
+(4) Click on “Create Project”; this will create a project board with three columns:
+    “To Do”, “In Progress”, and “Done”.
+```
+
+Your team is now ready to work on the new task (creating a new website) using GitHub Project to track and prioritize the work.
+It’s now time to add some specific, well-defined work (tasks, enhancements, and bugs) using Issues to the project. 
 
 
 
