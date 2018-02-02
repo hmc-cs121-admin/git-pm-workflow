@@ -1,4 +1,4 @@
-# GitHub Workflow Reference
+# GitHub Workflow an Project Management Reference
 
 
 ## Prerequisites
@@ -119,6 +119,7 @@ Once the project board is set up, Create a new Label “feature” for your repo
 https://help.github.com/articles/creating-a-label.
 
 
+The following two sections on adding tasks as cards/issues can be done by both developers in parallel.
 
 ### Add an Issue
 
@@ -137,8 +138,44 @@ Issues are a great way to keep track of tasks, enhancements, and bugs for your p
     Click the “New Website” project created by Developer A. 
 (5) This will assign this issue to the Project and will automatically add it to the To Do column.
 ```
+[Developer B]
+Your next steps (6)-(8) are the same as those for Developer A below. 
 
+### Add a note card and turn it into an issue
 
+You can also utilize GitHub Project Board to add your notes that might yet be ambiguous to become an Issue for the project (e.g., "Add an introduction page") or something you just want to remember as a to-do. The note may become an Issue once you give it a clearly defined task to be done (e.g., "Add about.html").
+
+[Developer A]
+```
+(1) On the GitHub repository page, click on the Projects tab and open the “New Website” project board. 
+(2) Click on the + sign in the To Do column.
+(3) Type in “Add an introduction page” to the card and click on the “Add Card” button.
+```
+
+[Developer A] 
+Later your team decided the introduction page to be “about.html.” Given the specific task, the card now can be converted to an Issue. 
+```
+(4) Click on the `...` icon on the note card and choose “Convert to Issue”. 
+(5) Change the title to “Add about.html” and include a more specific task description in the body. 
+    Notice that the card now has an Issue number (e.g., #10) and a link to the issue page. 
+    Click on the Issues tab and find the new issue, “Add about.html”, from the list. 
+```
+
+[Developer A] 
+Now try assigning yourself to the issue. 
+```
+(6) Click on “Add about.html” issue and see Assignees block on the right panel. 
+(7) Click on Assignee and choose both Developer A (yourself) and Developer B 
+    from the dropdown list.
+```
+
+[Developer A] 
+Say, now you are ready to work on creating and adding an `about.html` file to the repository. 
+Update the project board to let your teammates know that you started working on the assigned task.
+```
+(8) Go to the New Website project page, and drag and drop the “Add about.html” card 
+    into In Progress column indicating that you are working on the task.
+```
 
 
 ## References
