@@ -10,11 +10,32 @@
 - You know enough of vi or vim to edit, move around in, save, and quit files.
 
 
+## Form teams
+
+Form a 2-person team. If you are the odd-person-out, join a team of 2.
+
+Assign the following roles to the members of your team. If you are in a
+team of 2, assign the recorder and navigator roles to the same person.
+
+Roles:
+
+-   Developer A: Creates an organization, adds a new repository, creates a new project management (PM) board, and adds issues.
+
+-   Developer B: Reads instructions, assists with creating and closing issues.
+
+3rd person role (if you have a 3-person team):
+-   Additional developers repeat Developer B's steps on a new file / issue.
+
+
+-------------
+
 ## Start a new project
 
-When you start a new project, you'll want to create it inside an organization (1-2). 
+When you start a new project, you'll want to create it inside an organization (Steps 1-2 below). 
 This will allow everyone to contribute using the same workflow. 
-It's also a good idea to configure the new project to protect the master branch from accidental deletions and from pushes, and to require that changes to master only be done through reviewed pull-requests (3). Last, you'll need to invite maintainers of the code to be collaborators on the project (4-5). This will allow maintainers to review and merge pull-requests.
+It's also a good idea to configure the new project to protect the master branch from accidental deletions and from pushes, and to require that changes to master only be done through reviewed pull-requests (3). 
+Last, you'll need to invite maintainers of the code to be collaborators on the project (4-5). 
+This will allow maintainers to review and merge pull-requests.
 
 *On GitHub*
 ```
@@ -121,7 +142,8 @@ https://help.github.com/articles/creating-a-label.
 
 The following two sections on adding tasks as cards/issues can be done by both developers in parallel.
 
-### Add an Issue
+
+## Add an Issue
 
 Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. In this step, Developer B will add their task to create an `index.html` file as an issue. 
 
@@ -141,7 +163,7 @@ Issues are a great way to keep track of tasks, enhancements, and bugs for your p
 [Developer B]
 Your next steps (6)-(8) are the same as those for Developer A below. 
 
-### Add a note card and turn it into an issue
+## Add a note card and turn it into an issue
 
 You can also utilize GitHub Project Board to add your notes that might yet be ambiguous to become an Issue for the project (e.g., "Add an introduction page") or something you just want to remember as a to-do. The note may become an Issue once you give it a clearly defined task to be done (e.g., "Add about.html").
 
@@ -176,6 +198,55 @@ Update the project board to let your teammates know that you started working on 
 (8) Go to the New Website project page, and drag and drop the “Add about.html” card 
     into In Progress column indicating that you are working on the task.
 ```
+
+
+## Close an Issue
+
+After adding `about.html `file to their local repository, 
+Developer A will close the issue, “Add about.html,” using GitHub web interface 
+while Developer B will close the issue, “Create an index.html page,” using a git command 
+and push the change to the github remote repository. 
+
+
+[Developer A] 
+
+You created a file, about.html, and (optionally) added initial body contents to it. 
+(Note that the about.html file must have been added and the changes committed to the local repository.) 
+Now you want to close the issue, "Add about.html", using GitHub’s web interface. 
+
+```
+(1) Click on the Issues tab from the GitHub repository. 
+(2) Click on the “Add about.html” issus. Scroll down to the bottom of the page. Add your comments. 
+(3) Click on “Close and comment” button.
+(4) Now open the Projects tab and open "New Website" project. 
+    Notice the issue had been moved to “Done” column automatically.
+``` 
+
+
+[Developer A] 
+
+Open the Code tab and see if about.html is in the files list. (No? Why?)
+
+
+[Developer B] 
+
+Independently from Developer A, Developer B created and added index.html to the local repository.
+They are now ready to close the issue (e.g., #9) from the command line interface using a git commit command. 
+After the commit, Developer B pushes the changes made on the local repository to the GitHub remote repository.
+
+```
+# one developer
+git add index.html         # stage the file
+git commit -m 'Close #9'   # commit file, close issue
+git push                   # push the changes to GitHub
+```
+
+In this case, we closed the card through the commit message. 
+Open the Projects tab and check the appropriate issue had been moved to the “Done” column.
+There should be an icon next to it indicating that the issue is closed.
+
+Open the Code tab and see if index.html file is in the list. (Yes? Why?)
+
 
 
 ## References
