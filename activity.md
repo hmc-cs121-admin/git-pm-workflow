@@ -69,6 +69,8 @@ This will allow maintainers to review and merge pull-requests.
 
 ## Prepare to work on a project
 
+Because the project is owned by the organization, both Developer A and B can follow the steps below to setup their local repository for the project.
+
 When you first start working on a project, you'll need to fork their repo(s) into your personal GitHub account (1-3), clone your fork locally (4-6), and create a `remote` back to their project in your local repository (7-9). Once you've done this setup for a particular project, you will not need to do it again unless you delete your fork, or your local repository for the project.
 
 Why do we need this setup using forks? 
@@ -117,7 +119,8 @@ The objectives for the following section are to
 
 [Developer A] 
 ```
-(1) On the GitHub repository, select the Projects tab and click on “New Project”. 
+(1) On the main GitHub repository (not your local repo), select the Projects tab 
+    and click on “New Project”. 
 (2) Name the new project board “New Website” and type in some description.
 (3) In the Project Template section, click on “Template: None” and change it to 
     “Kanban (Automated)”.
