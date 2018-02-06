@@ -34,8 +34,8 @@ Roles:
 When you start a new project, you'll want to create it inside an organization (Steps 1-2 below). 
 This will allow everyone to contribute using the same workflow. 
 It's also a good idea to configure the new project to protect the master branch from accidental deletions and from pushes, and to require that changes to master only be done through reviewed pull-requests (3). 
-Last, you'll need to invite maintainers of the code to be collaborators on the project (4-5). 
-This will allow maintainers to review and merge pull-requests.
+Last, you'll need to invite collaborators on the project (4-5). These collaborators will be code maintainers, 
+and will be able to review and merge pull-requests.
 
 *On GitHub*
 ```
@@ -44,6 +44,7 @@ This will allow maintainers to review and merge pull-requests.
     Create an organization to own the new project. 
     Use the "+" in the top right corner on GitHub and select
     "New Organization". Add all team members to the organization.
+    (Team members will receive an invitation to join.)
     
 (2) Create official upstream repository in organization
 
@@ -60,10 +61,11 @@ This will allow maintainers to review and merge pull-requests.
     
 (4) Add collaborators
     Select "Collaborators & teams" from the left sidebar menu.
-    Invite maintainers to be collaborators on the project.
+    Invite collaborators on the project.
     
-(5) Each maintainer accepts the invitation through their email
+(5) Each maintainer/collaborator accepts the invitation through their email
     or on the project's page on GitHub.
+    (Each person will receive another email, now to join the repository.)
 ```
 
 
@@ -83,25 +85,25 @@ Before proceeding, read about the difference between `upstream` and `origin`:
 *Using GitHub*
 ```
 (1) Navigate to the project that was just created. 
-    This is the <PROJECT_REPOSITORY_URL>.
+    This is the <ORIGINAL_REPOSITORY_URL>.
 (2) Use "Fork" to fork their project into your personal
     GitHub account.
 (3) Navigate to _your_ fork of the project.
 (4) Use "Clone or download" to reveal _your_ fork's repository URL. 
-    This is the <FORKS_REPOSITORY_URL>.
+    This is the <FORKED_REPOSITORY_URL>.
     
 (5) Navigate to the original project's page (the one you forked from).
 (6) Use "Clone or download" to reveal the project's repository URL, which
-    is the <PROJECT_REPOSITORY_URL>.
+    is the <ORIGINAL_REPOSITORY_URL>.
 ```
 
 *Using the command-line*
 
 Using the command-line, navigate to the directory in which you will create a local repository. In a terminal, go to the folder where your local copy of the repo will live (for example, `cd Documents/cs121/src`).
 ```
-(5) git clone <FORKS_REPOSITORY_URL> <LOCAL_REPOSITORY_DIRECTORY>
+(5) git clone <FORKED_REPOSITORY_URL> <LOCAL_REPOSITORY_DIRECTORY>
 (6) cd <LOCAL_REPOSITORY_DIRECTORY>
-(7) git remote add upstream <PROJECT_REPOSITORY_URL>
+(7) git remote add upstream <ORIGINAL_REPOSITORY_URL>
 ```
 
 ## Setup a Project Management (PM) system (GitHub Projects)
