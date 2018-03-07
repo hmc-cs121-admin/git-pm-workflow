@@ -101,8 +101,9 @@ Mandating who merges each PR in the end maintains a good Git Blame (7).
 
   Refresh the pull request and check over your comments (in most cases if you commented on the correct line, your comment should be hidden if it has been addressed).
   Quickly read over the changed code again, if you have any comments, add them and have Developer B address them.
-  If you have no additional comments, on the upper right corner of “files changed” click the “Review changes” button, select approve, and click “submit review”.
-  **You’ve approved the changes, but don’t merge the branch! Let Developer B merge the branch to make sure the git blame log matches who worked on the branch**
+ If you have no additional comments, in the "Files changed" tab on Github, click on the "Review changes" button in the upper-right corner, select the "Approve" radiobutton, and click "Submit review".
+ 
+  **NOTE: You’ve approved the changes, but don’t merge the branch! Let Developer B merge the branch to make sure the git blame log matches who worked on the branch**
 
 ### (7) Merge the PR! (Developer B)
   Refresh your pull request. Since Developer A has approved it, the merge button should now be clickable. Merge it!
