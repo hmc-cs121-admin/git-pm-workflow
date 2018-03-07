@@ -9,7 +9,6 @@
 - You know how to open a terminal and generally work from the command-line.
 - You know enough of vi or vim to edit, move around in, save, and quit files.
 - You have completed the other Github tutorial and have a basic understanding of it's features
-- You have created a Repo along the other tutorial, which we will use here
 
 
 ## Form teams
@@ -21,7 +20,7 @@ team of 2, assign the recorder and navigator roles to the same person.
 
 Roles:
 
--   Developer A: Sets up required reviews and reviews Developer B's pull request (PR)
+-   Developer A: Sets up repoisotry with required reviews and reviews Developer B's pull request (PR)
 
 -   Developer B: Creates an erroneous addition and attempts to create a pull request
 
@@ -33,7 +32,8 @@ Roles:
 
 ## Pracitce the Code Review Dance
 
-If not already the case, make code reviews required for pull requests of important branches (Step 1 below).
+If not already the case, make repository is set up and code reviews required for pull requests of 
+important branches (Step 1 below).
 This helps prevent errorneous code (2) from slipping into your code base from a Pull Request (3).
 Performing these code reviews (4) fosters learning from your development team and sharing your own expertise.
 Allowing the original coder to make changes shares your insight and maintains code ownership (5).
@@ -43,7 +43,7 @@ Mandating who merges each PR in the end maintains a good Git Blame (7).
 *On GitHub*
 ### (1) Set up required code reviews (if necessary) (Developer A)
 
-  Go to the repositories's "Settings" tab (found on the rightmost tab of the repo). If the settings do not appear, you may not have full permissions in the Repo. Whoever made the repository can fix this in their settings. From the left sidebar select "Branches". Under the "Protected Branches" select the master branch to protect it from deletion and pushes. Require changes to master be made through pull-requests by ensuring that "Require pull request reviews before merging" is checked. You may need to uncheck "Require review from Code Owners" if your partner is just a collaborator and not an owner of the repo.
+  Begin by creating a repository on Github. Be sure to go to the repository's "Settings" tab (found on the rightmost tab of the repo). From the left sidebar select "Collaborators and teams". Now under "Collaborators" add your team member, Developer B. Make sure they join your repository now. While still in "Settings, from the left sidebar select "Branches". Under the "Protected Branches" select the master branch to protect it from deletion and pushes by making sure "Protect this branch" is checked. Require changes to master be made through pull-requests by ensuring that "Require pull request reviews before merging" is checked. Finally make sure that "Require review from Code Owners" is checked. In practice this final option will mean that only the PM, the repo owner, can approve PRs (for the sake of this exercise, this is Developer A).
 
 *On Command Line*
 ### (2) Create an erroneous file (Developer B)
