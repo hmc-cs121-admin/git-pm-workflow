@@ -32,8 +32,8 @@ Roles:
 
 ## Pracitce the Code Review Dance
 
-If not already the case, make repository is set up and code reviews required for pull requests of 
-important branches (Step 1 below).
+If not already the case, make sure the repository is set up and code reviews are 
+required for pull requests of important branches (Step 1 below).
 This helps prevent errorneous code (2) from slipping into your code base from a Pull Request (3).
 Performing these code reviews (4) fosters learning from your development team and sharing your own expertise.
 Allowing the original coder to make changes shares your insight and maintains code ownership (5).
@@ -43,7 +43,7 @@ Mandating who merges each PR in the end maintains a good Git Blame (7).
 *On GitHub*
 ### (1) Set up required code reviews (if necessary) (Developer A)
 
-  Begin by creating a repository on Github. Be sure to go to the repository's "Settings" tab (found on the rightmost tab of the repo). From the left sidebar select "Collaborators and teams". Now under "Collaborators" add your team member, Developer B. Make sure they join your repository now. While still in "Settings, from the left sidebar select "Branches". Under the "Protected Branches" select the master branch to protect it from deletion and pushes by making sure "Protect this branch" is checked. Require changes to master be made through pull-requests by ensuring that "Require pull request reviews before merging" is checked. Finally make sure that "Require review from Code Owners" is checked. In practice this final option will mean that only the PM, the repo owner, can approve PRs (for the sake of this exercise, this is Developer A).
+  Begin by creating a repository on Github. Be sure to go to the repository's "Settings" tab (found on the rightmost tab of the repo). From the left sidebar select "Collaborators and teams". Now under "Collaborators" add your team member, Developer B. Make sure they join your repository now. While still in "Settings, from the left sidebar select "Branches". Under the "Protected Branches" select the master branch to protect it from deletion and pushes by making sure "Protect this branch" is checked. Require changes to master be made through pull-requests by ensuring that "Require pull request reviews before merging" is checked. Now check the "Dismiss stale pull request approvals when new commits are pushed". This option is very important, as it makes sure that any changes to a PR submitted after approval get their own round of code review. Without this option, once you approved a branch anything could be merged to master. Finally make sure that "Require review from Code Owners" is checked. In practice this final option will mean that only the PM, the repo owner, can approve PRs (for the sake of this exercise, this is Developer A).
 
 *On Command Line*
 ### (2) Create an erroneous file (Developer B)
