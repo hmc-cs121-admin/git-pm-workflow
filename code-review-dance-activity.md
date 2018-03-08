@@ -20,7 +20,7 @@ team of 2, assign the recorder and navigator roles to the same person.
 
 Roles:
 
--   Developer A: Sets up repoisotry with required reviews and reviews Developer B's pull request (PR)
+-   Developer A: Sets up repository with required reviews and reviews Developer B's pull request (PR)
 
 -   Developer B: Creates an erroneous addition and attempts to create a pull request
 
@@ -30,7 +30,7 @@ Roles:
 
 -------------
 
-## Pracitce the Code Review Dance
+## Practice the Code Review Dance
 
 If not already the case, make sure the repository is set up and code reviews are 
 required for pull requests of important branches (Step 1 below).
