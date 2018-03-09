@@ -49,7 +49,7 @@ Mandating who merges each PR in the end maintains a good Git Blame (7).
 ### (2) Create an erroneous file (Developer B)
     
   Create a new branch to work on, and in this branch create a file called "problems.rb".
-  You will create a quick function that takes in a number *n* and prints "Hi *4n* times.
+  You will create a quick function that takes in a number *n* and prints "Hi" *4n* times.
   Create the funtion as follows (including errors):
   * Start by defining a function that takes in one integer n.
   * Give the function a confusing, complicated, or long name (ex. `printHi3TimesNTimes`).
