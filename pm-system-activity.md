@@ -1,4 +1,4 @@
-# GitHub Workflow an Project Management Reference
+# GitHub's Project Management System Workflow
 
 
 ## Prerequisites
@@ -7,7 +7,7 @@
   don't have one, create one now.
 - You have Git 2+ installed and configured.
 - You know how to open a terminal and generally work from the command-line.
-- You know enough of vi or vim to edit, move around in, save, and quit files.
+- You know enough of `vi`/`vim` or another command-line editor to edit, move around in, save, and quit files.
 
 
 ## Form teams
